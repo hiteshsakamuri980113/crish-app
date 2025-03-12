@@ -42,7 +42,8 @@ html {
   transform: rotate(-5deg);
   width: 80%; /* Decrease the width of each image */
   height: 500px; /* Increase the height of each image */
-  margin: 0 auto; /* Center the image container */
+  margin: 0 auto;
+  cursor: pointer; /* Center the image container */
 }
 
 .image-container:hover {
@@ -57,6 +58,7 @@ html {
   border-radius: 15px;
   border: 2px solid white; /* Add a modern border color */
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .image-container:hover .gallery-image {
