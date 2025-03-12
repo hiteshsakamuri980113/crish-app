@@ -26,7 +26,7 @@ const Home = () => {
 
         const imageUrls = [];
         for await (const blob of containerClient.listBlobsFlat()) {
-          // Filter only image files based on their extensions
+          // Filter only image files based on their extensions.
           if (/\.(jpg|jpeg|png|gif)$/i.test(blob.name)) {
             const blobClient = containerClient.getBlobClient(blob.name);
             imageUrls.push({ name: blob.name, url: blobClient.url });
